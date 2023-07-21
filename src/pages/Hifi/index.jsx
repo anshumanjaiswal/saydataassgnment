@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu, MenuItem } from "react-pro-sidebar";
-import { registerDeviceAuth } from "service/api";
+// import { registerDeviceAuth } from "service/api";
 
 import { Button, Img, Input, List, Text } from "components";
 import ConnectGoogle from "components/ConnectGoogle";
@@ -36,17 +36,17 @@ const HifiPage = () => {
     },
   ];
 
-  function columngoogle(data) {
-    const req = { data: { name: data?.name } };
+  // function columngoogle(data) {
+  //   const req = { data: { name: data?.name } };
 
-    registerDeviceAuth(req)
-      .then((res) => {
-        setRegister(res?.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }
+  //   registerDeviceAuth(req)
+  //     .then((res) => {
+  //       setRegister(res?.data);
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // }
 
   return (
     <>
